@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alphace.yuyan"
+    android:versionCode="6"
+    android:versionName="1.0.6" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="22" />
+ 
+    <!--
+         <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    
+    
+    
+    
+        <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    
+    
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <supports-screens android:anyDensity="true" />
+
+    <application
+        android:name="com.alphace.yuyan.CustomApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alphace.tuli.LoginActivity2" >
+        </activity>
+        <activity
+            android:name="com.alphace.tuli.RegistActivity2"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.alphace.tuli.CompleteDataActivity2"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.alphace.tuli.LoginPageActivity"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity android:name="com.alphace.tuli.PersonalActivity" >
+        </activity>
+        <activity android:name="com.alphace.tuli.SingleResultActivity2" >
+        </activity>
+        <activity android:name="com.alphace.tuli.HelpActivity" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name="com.alphace.tuli.MainActivity2" >
+        </activity>
+        <activity android:name="com.alphace.tuli.BindHelpActivity2" >
+        </activity>
+        <activity android:name="com.alphace.tuli.ChangePwActivity" >
+        </activity>
+        <activity android:name="com.alphace.tuli.ForgetPwActivity" >
+        </activity>
+        <activity android:name="com.alphace.tuli.AboutusActivity" >
+        </activity>
+        <activity android:name=".CompleteDataActivity" >
+        </activity>
+        <activity android:name=".Bind_Device_Activity" >
+        </activity>
+        <activity
+            android:name=".Bind_Device_Anim_Activity"
+            android:hardwareAccelerated="false" >
+        </activity>
+        <activity android:name=".HistoryDataActivity" >
+        </activity>
+        <activity android:name=".Personal_Setting_Activity" >
+        </activity>
+        <activity android:name=".AdviceCallbackActivity" >
+        </activity>
+        <activity android:name=".WeatherActivity" >
+        </activity>
+        <activity
+            android:name="com.alphace.yuyan.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+        <activity
+            android:name="com.alphace.utils.OPActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="com.alphace.service.BluetoothLeService"
+            android:enabled="true" />
+        <service android:name="com.alphace.service.ScanService" >
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="aCkRDuBMQdDmWh7so1r7HC6G" />
+        <!--
+        <meta-data
+            android:name="TA_APPKEY"
+            android:value="Aqcwxf0d4a0f190ada856" />
+        <meta-data
+            android:name="InstallChannel"
+            android:value="OpenPlatform" />
+        -->
+    </application>
+
+</manifest>

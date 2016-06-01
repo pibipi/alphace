@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10.5"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="天气"
+            android:textColor="#727272"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/weather_loc" />
+
+        <TextView
+            android:id="@+id/weather_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/imageView6"
+            android:text="上海"
+            android:textColor="#727272"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#F6F4F0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/weather_background"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp" >
+
+                <TextView
+                    android:id="@+id/weather_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="星期二"
+                    android:textColor="#767676"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/weather_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:text="2016年2月23日"
+                    android:textColor="#767676"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="113dp" >
+
+                <ImageView
+                    android:id="@+id/weather_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/weather_1" />
+
+                <TextView
+                    android:id="@+id/weather_temp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="25dp"
+                    android:text="阴转多云3℃~9℃"
+                    android:textColor="#767676"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:textColor="#767676"
+                    android:id="@+id/weather_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/weather_temp2"
+                    android:layout_alignTop="@+id/imageView5"
+                    android:layout_marginRight="105dp"
+                    android:layout_marginTop="19dp"
+                    android:text="9°"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:id="@+id/sk_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/weather_temp"
+                    android:layout_alignRight="@+id/weather_temp2"
+                    android:text="【18:04更新】"
+                    android:textColor="#8f8f8f"
+                    android:layout_marginRight="15dp"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/weather_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="湿度：62%"
+                    android:textColor="#767676"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/weather_uv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:text="紫外线：最弱"
+                    android:textColor="#767676"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/garden_shape" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/weather_advice1" />
+
+                <TextView
+                    android:id="@+id/weather_advice11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="护肤建议：保湿"
+                    android:textColor="#767676"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/weather_advice12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/weather_advice11"
+                    android:layout_alignTop="@id/weather_advice11"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="18dp"
+                    android:text="建议使用中性保湿型霜类化妆品。"
+                    android:textColor="#767676"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/garden_shape" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/weather_advice2" />
+
+                <TextView
+                    android:id="@+id/weather_advice21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:text="防晒建议：光线略强"
+                    android:textColor="#767676"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/weather_advice22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/weather_advice21"
+                    android:layout_alignTop="@id/weather_advice21"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="18dp"
+                    android:text="建议外出涂擦SPF高于15PA的防晒霜。"
+                    android:textColor="#767676"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/garden_shape" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/weather_advice3" />
+
+                <TextView
+                    android:id="@+id/weather_advice31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:text="穿衣建议：厚外套"
+                    android:textColor="#767676"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/weather_advice32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/weather_advice31"
+                    android:layout_alignTop="@id/weather_advice31"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="18dp"
+                    android:text="年老体弱者宜着呢大衣或者保暖羊毛衫。"
+                    android:textColor="#767676"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/garden_shape" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/weather_advice4" />
+
+                <TextView
+                    android:id="@+id/weather_advice41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:text="美发建议：滋润保湿"
+                    android:textColor="#767676"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/weather_advice42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/weather_advice41"
+                    android:layout_alignTop="@id/weather_advice41"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="18dp"
+                    android:text="湿度小，头发易产生静电，需使用含防晒和湿润成分的洗衣护发产品。"
+                    android:textColor="#767676"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

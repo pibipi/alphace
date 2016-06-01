@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="#b1b1b1" />
+
+    <RelativeLayout 
+        android:id="@+id/tips_back2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tuli_single_ble" >
+
+        <ImageView
+            android:id="@+id/tips1_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@+id/tips1"
+            android:src="@drawable/tuli_today_point"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tips1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="正在连接"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:paddingBottom="10dp"
+        android:id="@+id/multiply_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/multiply1" />
+
+    <CheckBox
+        android:id="@+id/skin_protect"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/multiply_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/skin_protect_selector"
+        android:button="@null"
+        android:checked="false" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/tuli_logo2" />
+
+    <Button
+        android:id="@+id/regist_phone"
+        android:layout_width="240dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/red_back"
+        android:text="通过手机号登录"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/wechat_login"
+        android:layout_width="240dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/regist_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gray_back"
+        android:text="微信登录"
+        android:textColor="#4e4e4e"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/wechat_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:text="登录"
+        android:textColor="#4e4e4e"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/know_more"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="点击了解更多"
+            android:textColor="#4e4e4e"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:src="@drawable/tuli_login_next" />
+    </RelativeLayout>
+
+</RelativeLayout>

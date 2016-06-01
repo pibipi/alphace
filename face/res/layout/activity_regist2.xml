@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/tuli_logo" />
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/r1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="验证码"
+            android:textColor="#b1b1b1"
+            android:textColorHint="#b1b1b1"
+            android:textCursorDrawable="@drawable/tuli_cursor"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/code_btn"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/code_back"
+            android:gravity="center"
+            android:text="点击获取"
+            android:textColor="#901d20"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#b1b1b1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r3"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/r2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textColor="#b1b1b1"
+            android:textColorHint="#b1b1b1"
+            android:textCursorDrawable="@drawable/tuli_cursor"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/pw_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/password_selector"
+            android:button="@null"
+            android:checked="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#b1b1b1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentTop="true"
+            android:background="#b1b1b1" />
+
+        <Button
+            android:id="@+id/regist_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#9f9f9f" />
+
+        <Button
+            android:id="@+id/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="#9f9f9f" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/r2"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="18dp" >
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:textColor="#b1b1b1"
+            android:textColorHint="#b1b1b1"
+            android:textCursorDrawable="@drawable/tuli_cursor"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#b1b1b1" />
+    </RelativeLayout>
+
+</RelativeLayout>

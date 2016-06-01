@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FaFaFa"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/single_result_shape"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvCurrentMonth"
+                android:layout_alignBottom="@+id/tvCurrentMonth"
+                android:layout_alignLeft="@+id/yearText"
+                android:text="月"
+                android:textColor="#535353"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/yearText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/tvCurrentMonth"
+                android:layout_marginLeft="67dp"
+                android:text="2015"
+                android:textColor="#767676"
+                android:textSize="@dimen/dp_14" />
+
+            <TextView
+                android:id="@+id/tvCurrentMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginRight="7dp"
+                android:layout_toLeftOf="@+id/textView1"
+                android:text="9"
+                android:textColor="#535353"
+                android:textSize="@dimen/dp_36" />
+
+            <ImageView
+                android:id="@+id/history_data_close"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/history_data_close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_marginBottom="2dip"
+                android:layout_marginTop="2dip" >
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="日"
+                        android:textColor="#901d20" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="一"
+                        android:textColor="@color/canlendar_text_color" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="二"
+                        android:textColor="@color/canlendar_text_color" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="三"
+                        android:textColor="@color/canlendar_text_color" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="四"
+                        android:textColor="@color/canlendar_text_color" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="五"
+                        android:textColor="@color/canlendar_text_color" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="六"
+                        android:textColor="@color/canlendar_text_color" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white" >
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="90dp"
+                android:text="今天"
+                android:textColor="#4e4e4e"
+                android:textSize="@dimen/dp_12" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90dp"
+                android:text="多点测试"
+                android:textColor="#4e4e4e"
+                android:textSize="@dimen/dp_12" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/textView2"
+                android:src="@drawable/tuli_today_point" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-18dp"
+                android:src="@drawable/tuli_multiply_point" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

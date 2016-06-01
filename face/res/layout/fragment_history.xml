@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp" >
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="#b1b1b1" />
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/v1"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/no_data_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tuli_no_data"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/layout_chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#646667"
+        android:textSize="@dimen/dp_16" />
+
+    <TextView
+        android:id="@+id/date_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_time"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="sss"
+        android:textColor="#a9abad"
+        android:textSize="@dimen/dp_12"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/rel1"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/view1"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/face_water_icon" />
+
+            <TextView
+                android:id="@+id/water_progress"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/face_water_progressBar"
+                android:gravity="center"
+                android:text="60"
+                android:textColor="#4e4e4e"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/water_type"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/water_progress"
+                android:gravity="center"
+                android:text="缺水"
+                android:textColor="#4e4e4e"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="水分程度"
+                android:textColor="#4e4e4e"
+                android:textSize="12sp" />
+
+            <com.alphace.view.MyProgressBar
+                android:id="@+id/face_water_progressBar"
+                style="@style/StyleProgressBarWater"
+                android:layout_width="155dp"
+                android:layout_height="9dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:background="@drawable/shape_progressbar_water"
+                android:progress="5"
+                android:secondaryProgress="100" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1" >
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/face_oil_icon" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/imageView11"
+                android:text="水油平衡"
+                android:textColor="#4e4e4e"
+                android:textSize="12sp" />
+
+            <com.alphace.view.MyProgressBar
+                android:id="@+id/face_oil_progressBar"
+                style="@style/StyleProgressBarWater"
+                android:layout_width="155dp"
+                android:layout_height="9dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/textView33"
+                android:background="@drawable/shape_progressbar_water"
+                android:progress="5"
+                android:secondaryProgress="100" />
+
+            <TextView
+                android:id="@+id/oil_progress"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/face_oil_progressBar"
+                android:gravity="center"
+                android:text="60"
+                android:textColor="#4e4e4e"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/oil_type"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/oil_progress"
+                android:gravity="center"
+                android:text="泛油"
+                android:textColor="#4e4e4e"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout3" >
+
+            <ImageView
+                android:id="@+id/imageView111"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/skin_color_icon" />
+
+            <TextView
+                android:id="@+id/textView333"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/imageView111"
+                android:text="肤色程度"
+                android:textColor="#4e4e4e"
+                android:textSize="12sp" />
+
+            <com.alphace.view.MyProgressBar
+                android:id="@+id/skin_light_progressBar"
+                style="@style/StyleProgressBarWater"
+                android:layout_width="155dp"
+                android:layout_height="9dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/textView333"
+                android:background="@drawable/shape_progressbar_water"
+                android:progress="5"
+                android:secondaryProgress="100" />
+
+            <TextView
+                android:id="@+id/light_progress"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/skin_light_progressBar"
+                android:gravity="center"
+                android:text="60"
+                android:textColor="#4e4e4e"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/light_type"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/light_progress"
+                android:gravity="center"
+                android:text="偏黄"
+                android:textColor="#4e4e4e"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout2" >
+
+            <ImageView
+                android:id="@+id/imageView1111"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/skin_average_icon" />
+
+            <com.alphace.view.MyProgressBar
+                android:id="@+id/skin_average_progressBar"
+                style="@style/StyleProgressBarWater"
+                android:layout_width="155dp"
+                android:layout_height="9dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/textView3333"
+                android:background="@drawable/shape_progressbar_water"
+                android:progress="5"
+                android:secondaryProgress="100" />
+
+            <TextView
+                android:id="@+id/average_progress"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/skin_average_progressBar"
+                android:gravity="center"
+                android:text="60"
+                android:textColor="#4e4e4e"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/average_type"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/average_progress"
+                android:gravity="center"
+                android:text="不均匀"
+                android:textColor="#4e4e4e"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView3333"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/imageView1111"
+                android:text="均匀度"
+                android:textColor="#4e4e4e"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    android:background="@drawable/single_result_shape" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="25dp"
+        android:text="测试正在进行中，你确定要重测上一个部位？"
+        android:textColor="#767676"
+        android:textSize="@dimen/dp_14" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="#F2F2F3" />
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/dialog_yes"
+        android:text="是"
+        android:textColor="#957cc8" />
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/dialog_no"
+        android:text="否"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

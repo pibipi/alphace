@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tuli_logo" />
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <EditText android:textCursorDrawable="@drawable/tuli_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="用户名"
+            android:textColor="#b1b1b1"
+            android:textColorHint="#b1b1b1"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#b1b1b1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/r1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="性别"
+            android:textColor="#b1b1b1"
+            android:textColorHint="#b1b1b1"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#b1b1b1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r3"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/r2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="年龄"
+            android:textColor="#b1b1b1"
+            android:textColorHint="#b1b1b1"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#b1b1b1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r4"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/r3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="肌肤类型"
+            android:textColor="#b1b1b1"
+            android:textColorHint="#b1b1b1"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#b1b1b1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentTop="true"
+            android:background="#b1b1b1" />
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#9f9f9f" />
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="#9f9f9f" />
+    </RelativeLayout>
+
+</RelativeLayout>
