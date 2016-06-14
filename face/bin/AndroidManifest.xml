@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.alphace.yuyan"
-    android:versionCode="6"
-    android:versionName="1.0.6" >
+    android:versionCode="7"
+    android:versionName="1.0.7" >
 
     <uses-sdk
         android:minSdkVersion="18"
         android:targetSdkVersion="22" />
- 
+
     <!--
          <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
     </uses-permission>
@@ -51,9 +51,14 @@
     </uses-permission>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
     </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
 
-    
-    
     <uses-feature
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
@@ -154,6 +159,13 @@
             android:name="InstallChannel"
             android:value="OpenPlatform" />
         -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="575fca8867e58edb8e00347d" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Yingyongbao" />
     </application>
 
 </manifest>

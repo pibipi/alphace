@@ -1,6 +1,5 @@
 package com.alphace.tuli;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.UUID;
 
@@ -13,7 +12,6 @@ import org.apache.http.util.EntityUtils;
 import android.app.AlertDialog;
 import android.app.Notification;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothManager;
 import android.content.BroadcastReceiver;
@@ -26,9 +24,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
@@ -55,7 +51,6 @@ import android.widget.Toast;
 import com.alphace.constant.NomalConstant;
 import com.alphace.service.BluetoothLeService;
 import com.alphace.utils.MyUtils;
-import com.alphace.utils.OPActivity;
 import com.alphace.utils.SharedpreferencesUtil;
 import com.alphace.yuyan.HistoryDataActivity;
 import com.alphace.yuyan.R;
@@ -64,6 +59,7 @@ import com.tencent.mm.sdk.modelmsg.WXMediaMessage;
 import com.tencent.mm.sdk.modelmsg.WXWebpageObject;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
+import com.umeng.analytics.MobclickAgent;
 
 public class MainActivity2 extends FragmentActivity implements
 		OnCheckedChangeListener, OnClickListener {
@@ -550,14 +546,17 @@ public class MainActivity2 extends FragmentActivity implements
 		state_flag = false;
 		unregisterReceiver(mGattUpdateReceiver);
 		super.onPause();
+		MobclickAgent.onPause(this);
 	}
 
 	@Override
 	protected void onResume() {
+
 		state_flag = true;
 		new BLEScanThread().start();
 		registerReceiver(mGattUpdateReceiver, makeGattUpdateIntentFilter());
 		super.onResume();
+		MobclickAgent.onResume(this);
 	}
 
 	@Override
