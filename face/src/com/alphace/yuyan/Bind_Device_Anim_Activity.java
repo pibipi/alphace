@@ -631,7 +631,7 @@ public class Bind_Device_Anim_Activity extends Activity implements
 		// mBluetoothLeService.disconnect();
 		// mBluetoothLeService.close();
 		// }
-		unbindService(mServiceConnection);
+//		unbindService(mServiceConnection);
 		unregisterReceiver(mGattUpdateReceiver);
 		super.onPause();
 	}

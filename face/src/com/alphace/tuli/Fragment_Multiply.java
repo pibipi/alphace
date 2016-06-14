@@ -469,7 +469,8 @@ public class Fragment_Multiply extends Fragment implements OnClickListener,
 
 		// 处理oil
 		int _oil;
-		_oil = _water - 10 + new Random().nextInt(21);
+		_oil = (int) ((_water - 10 + new Random().nextInt(21)) / 5f + 30 - 10 + new Random()
+		.nextInt(21));
 
 		if (_oil <= 10) {
 			_oil = 10;

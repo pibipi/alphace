@@ -13,6 +13,6 @@ public class NomalConstant {
 	public static ArrayList<CustomDate> multiply_test_date_list;
 	public static String AppSecret = "cadf67d28843afab05eafb142d46e0eb";
 	public static String AppID = "wx81253dd6451d48a1";
-	public static String DEVICE_NAME = "Tuli";
+	public static String DEVICE_NAME = "ace";
 
 }

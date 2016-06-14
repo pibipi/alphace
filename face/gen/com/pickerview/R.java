@@ -16,10 +16,10 @@ public final class R {
 		public static final int wheel_timebtn_pre = 0x7f050001;
 	}
 	public static final class drawable {
-		public static final int bg_above_timepicker = 0x7f020001;
-		public static final int bg_line_timepicker = 0x7f020002;
-		public static final int wheel_timebtn = 0x7f020090;
-		public static final int wheel_val = 0x7f020091;
+		public static final int bg_above_timepicker = 0x7f020004;
+		public static final int bg_line_timepicker = 0x7f020005;
+		public static final int wheel_timebtn = 0x7f020093;
+		public static final int wheel_val = 0x7f020094;
 	}
 	public static final class id {
 		public static final int btnCancel = 0x7f08009c;
